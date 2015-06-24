@@ -1,9 +1,5 @@
 {
-  "name": "castle",
-  "version": "0.0.0",
-  "authors": [
-    "Kevin Ward <antiomiae@gmail.com>"
-  ],
+  "name": "actor-messages",
   "moduleType": [
     "es6"
   ],
@@ -16,7 +12,8 @@
     "tests"
   ],
   "dependencies": {
-    "babel-polyfill": "~0.0.1",
-    "hammerjs": "~2.0.4"
+    "babel-polyfill": "",
+    "hammerjs": "",
+    "pixi": "3"
   }
 }
