@@ -54,9 +54,9 @@ gulp.task('compileApp', function() {
 		})
 		.pipe(plumber())
 		.pipe(sourceMaps.init())
-		.pipe(concat('all.js'))
 		.pipe(babel(babelOptions))
-		.pipe(sourceMaps.write('.', {sourceMappingURLPrefix: '/'}))
+        .pipe(concat('all.js'))
+        .pipe(sourceMaps.write('.', {sourceMappingURLPrefix: '/'}))
         .pipe(gulp.dest(dir.build));
 });
 
@@ -73,7 +73,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('build-dev', function() {
-	runSeq('clean-build', ['copy-static', 'compileApp'], 'bower')
+	runSeq('clean-build', ['copy-static', 'compileApp'], 'bower');
 });
 
 gulp.task('default', function() {
