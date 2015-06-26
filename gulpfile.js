@@ -12,6 +12,11 @@ var bower = require('gulp-bower');
 var wiredep = require('wiredep').stream;
 var jshint = require('gulp-jshint');
 
+var packageJSON  = require('./package');
+var jshintConfig = packageJSON.jshintConfig;
+
+jshintConfig.lookup = false;
+
 var dir = {
     index: './app/index.html',
     sourceDir: './app',
@@ -47,7 +52,7 @@ gulp.task('lint', function() {
     return gulp.src(dir.source, {
             base: dir.sourceDir
         })
-        .pipe(jshint())
+        .pipe(jshint(jshintConfig))
         .pipe(jshint.reporter('jshint-stylish'));
 });
 

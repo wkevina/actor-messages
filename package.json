@@ -1,27 +1,31 @@
 {
-  "name": "actor-messages",
-  "version": "0.0.1",
-  "description": "",
-  "repository": {
-    "type": "git",
-    "url": "wkevina/"
-  },
-  "devDependencies": {
-    "del": "^1.2.0",
-    "gulp": "^3.9.0",
-    "gulp-bower": "0.0.10",
-    "gulp-concat": "^2.6.0",
-    "gulp-connect": "^2.2.0",
-    "gulp-jshint": "^1.11.0",
-    "gulp-newer": "^0.5.1",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-traceur": "^0.17.1",
-    "gulp-util": "^3.0.6",
-    "jshint-stylish": "^2.0.1",
-    "run-sequence": "^1.1.1",
-    "es6-micro-loader": "^0.2.1",
-    "gulp-babel": "^5.1.0",
-    "wiredep": "^2.2.2"
-  }
+    "name": "actor-messages",
+    "version": "0.0.1",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "wkevina/"
+    },
+    "devDependencies": {
+        "del": "^1.2.0",
+        "gulp": "^3.9.0",
+        "gulp-bower": "0.0.10",
+        "gulp-concat": "^2.6.0",
+        "gulp-connect": "^2.2.0",
+        "gulp-jshint": "^1.11.0",
+        "gulp-newer": "^0.5.1",
+        "gulp-plumber": "^1.0.1",
+        "gulp-sourcemaps": "^1.5.2",
+        "gulp-traceur": "^0.17.1",
+        "gulp-util": "^3.0.6",
+        "jshint-stylish": "^2.0.1",
+        "run-sequence": "^1.1.1",
+        "es6-micro-loader": "^0.2.1",
+        "gulp-babel": "^5.1.0",
+        "wiredep": "^2.2.2"
+    },
+
+    "jshintConfig": {
+        "esnext": true
+    }
 }
